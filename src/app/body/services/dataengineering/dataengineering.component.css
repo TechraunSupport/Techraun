@@ -1,0 +1,361 @@
+.content img{
+    width:100%;
+    height: 93vh;
+    position: absolute;
+    z-index: -1;
+}
+.item{
+    background-color: rgba(0, 0, 0, 0.455);
+    height:93vh;
+    h1{
+      color: #fff;
+      font-family:sans-serif;
+      position: relative;
+      top:17rem;
+      font-weight: bold;
+      text-align: center;
+      font-size: 4rem;
+  
+  }
+    } 
+  .content2{
+      position: absolute;
+      padding: 50px;
+      p{
+          text-align: start;
+          font-family: sans-serif;
+          font-size: 20px;
+          font-weight: bold;
+          margin-top: 20px;
+
+      }
+  }
+  /* ------------------------------------------------------------------------- */
+  .card-content{
+      margin-top: 15rem;
+      padding: 10px;
+      margin-bottom: 5rem;
+      h1{
+          font-family:sans-serif;
+          font-weight: bold;
+          text-align: center;
+          margin-bottom: 90px;
+      }
+      .card-inner{
+          display:flex;
+          flex-wrap: wrap;
+          gap:10rem;
+          justify-content: center;
+      }
+  }
+  .cards{
+      height: 24rem;
+      width: 20rem;
+      background-color:#ffffff99;
+     box-shadow: 3px 3px 6px grey;
+      img{
+          width: 20rem;
+          height:14rem;
+          z-index: -1;
+          position: absolute;
+      }
+      p{
+          padding: 25px;
+          font-family:sans-serif;
+          color:rgb(4, 4, 41);
+      }
+  }
+  .color{
+      position: relative;
+      background-color:rgb(4, 4, 41);
+      height: 10rem;
+      h1{
+          color:#fff;
+          font-size: 22px;
+          font-family: sans-serif;
+          padding: 50px;
+          text-align: center;
+      }
+  }
+
+  /* -------------------------------------------------------------------------------------------------- */
+  .foot{
+      padding: 30px;
+      h1{
+          font-family:sans-serif;
+          font-weight: bold;
+          text-align: center;
+      }
+  }
+  
+  .card1-content{
+      padding: 50px;
+      display: flex;
+      flex-wrap: wrap;
+      gap:30px;
+      justify-content: center;
+  }
+  .card1{
+      background-color: #fff;
+      height: 13rem;
+      width:15rem;
+      box-shadow: 3px 3px 6px grey;
+     
+      img{
+          height: 5rem;
+          margin-left: 75px;
+          margin-top: 50px;
+
+      }
+      h1{
+          font-size: 20px;
+          font-family: sans-serif;
+          text-align: center;
+          margin-top: 7px;
+          color: rgb(4, 4, 41);
+}
+p{
+  position: absolute;
+  background-color: black;
+ width:15rem;
+ height: 13rem;
+ margin-top: -10.5rem;
+ background-color:rgb(4, 4, 41);
+ color:#fff;
+ font-family:sans-serif;
+ padding: 20px;
+ font-size: 14px;
+ opacity: 0;
+ transition: 1s ease;
+} 
+  
+  }
+  .card1:hover p{
+      opacity: 1;
+  }
+  
+  @media(0px <= width <= 576px){
+    .content img{
+        height: 30vh;
+  }
+    .item{
+        height:30vh;
+        h1{
+            font-size: 15px;
+            top:5rem;
+        }
+        } 
+        .content2{
+            padding: 50px;
+            p{
+                font-size: 10px;
+                margin-top: 7px;
+            }
+        }
+
+
+    /* ----- */
+        .card-content{
+            margin-top: 15rem;
+            padding: 10px;
+            margin-bottom: 5rem;
+            h1{
+              font-size: 20px;
+            }
+            .card-inner{
+                display:flex;
+                flex-wrap: wrap;
+                gap:20px;
+                justify-content: center;
+            }
+        }
+        .cards{
+            height: 22rem;
+            width: 18rem;
+            img{
+                width: 18rem;
+                height:12rem;
+            }
+            p{
+                font-size: 13px;
+            }
+        }
+        .color{
+            height: 10rem;
+            h1{
+                font-size: 20px;
+            }
+        }
+    /* ------ */
+    .foot{
+        h1{
+        font-size: 20px;        
+        }
+    }
+    
+    .card1-content{
+        padding: 10px;
+    }
+    
+}
+@media(577px<= width <= 768px){
+    .content img{
+        height: 50vh;
+  }
+    .item{
+        height:50vh;
+        h1{
+            font-size: 25px;
+            top:8rem;
+        }
+        } 
+        .content2{
+            p{
+                font-size: 15px;
+                margin-top: 7px;
+                text-align: start;
+            }
+        }
+
+
+    /* ----- */
+        .card-content{
+            margin-top: 15rem;
+            padding: 10px;
+            margin-bottom: 5rem;
+            h1{
+              font-size: 25px;
+            }
+            .card-inner{
+                display:flex;
+                flex-wrap: wrap;
+                gap:20px;
+                justify-content: center;
+            }
+        }
+        .cards{
+            height: 22rem;
+            width: 18rem;
+            img{
+                width: 18rem;
+                height:12rem;
+            }
+            p{
+                font-size: 13px;
+            }
+        }
+        .color{
+            height: 10rem;
+            h1{
+                font-size: 20px;
+            }
+        }
+    /* ------ */
+    .foot{
+        h1{
+        font-size: 25px;       
+        margin-bottom: 20px; 
+        }
+    }
+    
+    .card1-content{
+        padding: 10px;
+    }
+    .card1{
+        h1{
+            font-size: 20px;
+ }
+ p{
+   margin-top: -11.2rem;
+  } 
+}
+}
+@media(769px<= width <= 992px){
+    .content img{
+        height: 60vh;
+  }
+    .item{
+        height:60vh;
+        h1{
+            font-size: 30px;
+            top:10rem;
+        }
+        } 
+        .content2{
+            p{
+                font-size: 15px;
+                margin-top: 7px;
+                text-align: start;
+            }
+        }
+
+
+    /* ----- */
+        .card-content{
+            margin-top: 15rem;
+            padding: 10px;
+            margin-bottom: 5rem;
+            h1{
+              font-size: 25px;
+            }
+            .card-inner{
+                display:flex;
+                flex-wrap: wrap;
+                gap:20px;
+                justify-content: center;
+            }
+        }
+        .cards{
+            height: 22rem;
+            width: 18rem;
+            img{
+                width: 18rem;
+                height:12rem;
+            }
+            p{
+                font-size: 13px;
+            }
+        }
+        .color{
+            height: 10rem;
+            h1{
+                font-size: 20px;
+            }
+        }
+    /* ------ */
+    .foot{
+        h1{
+        font-size: 25px;       
+        margin-bottom: 20px; 
+        }
+    }
+    
+    .card1-content{
+        padding: 10px;
+    }
+    .card1{
+        h1{
+            font-size: 20px;
+ }
+}
+
+}
+@media(993px<= width <= 1500px){
+    .content img{
+        height: 60vh;
+  }
+    .item{
+        height:60vh;
+        h1{
+            font-size: 30px;
+            top:10rem;
+        }
+        } 
+}
+@media(width >= 2000px){
+    .item{
+        h1{
+            top:25rem;
+        }
+}
+}

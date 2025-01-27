@@ -1,0 +1,121 @@
+main{
+  position: relative;
+  top:10rem;
+ }
+     .h1{
+         text-align: center;
+         font-family:sans-serif;
+         font-weight: bolder;
+         position: relative;
+         animation: head 2s linear;
+         
+ 
+     }
+     @keyframes head{
+         from{left:-100px}
+         to{left:0px}
+     }
+ .container .card{
+     height: 11.5rem;
+     width:14rem;
+     border-color:transparent;
+     box-shadow:3px 3px 6px grey ;
+     position: relative;
+     animation-name: card;
+     animation-timing-function: linear;
+     animation-duration: 2s;
+     
+ 
+ }
+ @keyframes card{
+     from{top:-100px;}
+     to{top:0px;}
+ }
+ .container{
+     display:flex;
+     flex-wrap: wrap;
+     margin-top: 10px;
+     gap:20px;
+     height: 25rem;
+     align-items: center;
+     justify-content: center;
+    
+ }
+ 
+     h1{
+         font-family:sans-serif;
+         font-size: 20px;
+         text-align: center;
+         padding: 10px;
+          color:#000;
+      }
+      img{
+        height: 6rem;
+        width: 6rem;
+        margin-top: 20px;
+        margin-left: 55px;
+      }
+
+ .content{
+     position: absolute;
+     padding: 10px;
+  }
+  
+  p{
+     font-size: 10px;
+     font-family: sans-serif;
+     padding: 10px;
+     opacity: 0;
+ 
+ }
+  .container .card:hover{
+   background-color: #000;
+     transition: 1s ease;
+  }
+  .container .card:hover .content{
+     transition: 1s ease;
+     p{
+         font-size: 12px;
+         opacity: 1;
+         color: #fff;
+     }
+  }
+  @media(0px <= width <= 576px){
+    main{
+      top:5rem;
+     }
+    .h1{
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+  }
+  @media(577px<= width <= 768px){
+    main{
+      top:5rem;
+     }
+    .h1{
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+  }
+  @media(769px<= width <= 992px){
+    .h1{
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+  }
+  @media(993px <= width <=1500px){
+    .h1{
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+  }
+  @media(width > 2001px){
+    main{
+        top: 10rem;
+      }
+    .h1{
+        margin-bottom: 30px;
+        margin-top: 80px;
+    }
+  }

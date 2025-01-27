@@ -1,0 +1,144 @@
+
+.card-content{
+    margin-top: 5rem;
+    padding: 10px;
+    margin-bottom: 5rem;
+    h1{
+        font-family:sans-serif;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 90px;
+    }
+    .card-inner{
+        display:flex;
+        flex-wrap: wrap;
+        gap:10rem;
+        justify-content: center;
+    }
+}
+.cards{
+    height: 24rem;
+    width: 20rem;
+    background-color:#ffffffb0;
+   box-shadow: 3px 3px 6px grey;
+    img{
+        width: 20rem;
+        height:14rem;
+        z-index: -1;
+        position: absolute;
+    }
+    p{
+        padding: 25px;
+        font-family: sans-serif;
+        color:rgb(4, 4, 41);
+    }
+}
+.color{
+    position: relative;
+    background-color:rgb(4, 4, 41);
+    height: 10rem;
+    h1{
+        color:#fff;
+        font-size: 22px;
+        font-family: sans-serif;
+        padding: 50px;
+        text-align: center;
+    }
+}
+@media(0px <= width <= 576px){
+    .card-content{
+        padding: 10px;
+        margin-bottom: 5rem;
+        h1{
+          font-size: 20px;
+        }
+        .card-inner{
+            display:flex;
+            flex-wrap: wrap;
+            gap:20px;
+            justify-content: center;
+        }
+    }
+    .cards{
+        height: 22rem;
+        width: 18rem;
+        img{
+            width: 18rem;
+            height:12rem;
+        }
+        p{
+            font-size: 13px;
+        }
+    }
+    .color{
+        height: 10rem;
+        h1{
+            font-size: 20px;
+        }
+    }
+}
+@media(577px<= width <= 768px){
+    .card-content{
+
+        padding: 10px;
+        margin-bottom: 5rem;
+        h1{
+          font-size: 25px;
+        }
+        .card-inner{
+            display:flex;
+            flex-wrap: wrap;
+            gap:20px;
+            justify-content: center;
+        }
+    }
+    .cards{
+        height: 22rem;
+        width: 18rem;
+        img{
+            width: 18rem;
+            height:12rem;
+        }
+        p{
+            font-size: 13px;
+        }
+    }
+    .color{
+        height: 10rem;
+        h1{
+            font-size: 20px;
+        }
+    }
+}
+@media(769px<= width <= 992px){
+    .card-content{
+        padding: 10px;
+        margin-bottom: 5rem;
+        h1{
+          font-size: 25px;
+        }
+        .card-inner{
+            display:flex;
+            flex-wrap: wrap;
+            gap:20px;
+            justify-content: center;
+        }
+    }
+    .cards{
+        height: 22rem;
+        width: 18rem;
+        img{
+            width: 18rem;
+            height:12rem;
+        }
+        p{
+            font-size: 13px;
+        }
+    }
+    .color{
+        height: 10rem;
+        h1{
+            font-size: 20px;
+        }
+    }
+}

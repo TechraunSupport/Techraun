@@ -1,0 +1,97 @@
+<app-navigationbar></app-navigationbar>
+<main>
+    <div class="main">
+    <div class="design">
+        <div class="design1">Let's</div><div class="design2">Connect</div>
+        <p>Begin your journey with us today.</p>
+        <p>We're here to help.</p>
+    </div>
+    <form #Userform="ngForm">
+        <div class="row">
+            <div class="col-12 col-lg-6">
+        <div>
+        <label for="firstname">Firstname <span>*</span></label><br>
+        <input type="text" id="firstname" name="firstname" [(ngModel)]="userObj.firstname" #firstname="ngModel" placeholder="firstname" minlength="3" required>
+        <div class="text-danger" *ngIf="firstname.invalid && (firstname.touched || firstname.dirty||isFormsubmitted)">
+            <span *ngIf="firstname.errors?.['required']">This is required</span>
+            <span *ngIf="firstname.errors?.['minlength']">Min 3 Charactors Needed</span>
+        </div>
+    </div>
+    </div>
+    <div class="col-12 col-lg-6">
+    <div>
+        <label for="lastname">Lastname <span>*</span></label><br>
+        <input type="text" id="lastname" name="lastname" [(ngModel)]="userObj.lastname" #lastname="ngModel" placeholder="lastname" minlength="1" required>
+        <div class="text-danger" *ngIf="lastname.invalid && (lastname.touched || lastname.dirty ||isFormsubmitted)">
+            <span  *ngIf="lastname.errors?.['required']">This is required</span>
+            <span  *ngIf="lastname.errors?.['minlength']">Min 5 Charactors Needed</span>
+        </div>
+    </div>
+    </div>
+    <div class="col-12 col-lg-6">
+    <div>
+        <label for="email">Email <span>*</span></label><br>
+        <input type="email" id="email" name="email" [(ngModel)]="userObj.email" placeholder="email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" #email="ngModel" required>
+        <div class="text-danger" *ngIf="email.invalid && (email.touched || email.dirty ||isFormsubmitted)">
+            <span  *ngIf="email.errors?.['required']">Required</span>
+            <span  *ngIf="email.errors?.['pattern']">please entry the valid phone email</span>   
+        </div>
+</div>
+    </div>
+    <div class="col-12 col-lg-6">
+    <div>
+        <label for="phonenumber">Phonenumber <span>*</span></label><br>
+        <input type="text" id="phonenumber" name="phonenumber" [(ngModel)]="userObj.phonenumber" placeholder="phonenumber"  pattern="[7-9]{1}[0-9]{9}" #phonenumber="ngModel" required >
+        <div class="text-danger" *ngIf="phonenumber.invalid && (phonenumber.touched || phonenumber.dirty ||isFormsubmitted)">
+            <span  *ngIf="phonenumber.errors?.['required']">Required</span>
+            <span  *ngIf="phonenumber.errors?.['pattern']">please entry the valid phone number</span>   
+        </div>
+    </div>
+    </div>
+    <div class="col-12 col-lg-6">
+    <div>
+        <label for="whatsapp">Whatsapp Phonenumber</label><br>
+        <input type="text" id="whatsapp" name="whatsapp" required>
+    </div>
+    </div>
+    <div class="col-12 col-lg-6">
+    <div>
+        <label for="country">Where do you currently live(Country) <span>*</span></label><br>
+        <select name="country" id="country">
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+        </select>
+    </div>
+    </div>
+    <div class="col-12 col-lg-6 ">
+    <div>
+        <label for="option1">Which option describes better your situation? <span>*</span></label><br>
+        <select name="option1" id="option1">
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+        </select>
+    </div>
+    </div>
+    <div class="col-12 col-lg-6">
+    <div>
+        <label for="option2">What is your inquiry about? <span>*</span></label><br>
+        <select name="option2" id="option">
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+        </select>
+    </div>
+    </div>
+    <div>
+        <label for="message">Message</label><br>
+        <textarea name="message" id="message"></textarea>
+    </div>
+    <div>
+        <button type="button" (click)="onsubmit(Userform)">submit</button>
+    </div>
+    </div>
+    </form>
+    </div>
+</main>

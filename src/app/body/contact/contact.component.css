@@ -1,0 +1,230 @@
+main{
+    background-color: rgba(135, 207, 235, 0.378);
+    height: 93vh;
+}
+.main{
+    position:relative;
+    margin: auto;
+    width: 80rem;
+    height: 42rem;
+    top:2rem;
+   color: #ffff;
+    font-family: monospace;
+    background-color:#ffffffd0;
+    display: flex;
+    gap:30px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}
+form{
+
+    padding: 2rem;
+    width: 50rem;
+}
+div{
+margin-bottom: 0.5rem;
+}
+
+input{
+border: none;
+background-color:#ffffff02;
+border-bottom: 2px solid black;
+  font-family: sans-serif;
+ width:13rem;
+    padding:10px;
+    color:  #4e1e1c;
+    margin-top: 10px;
+}
+
+label{
+    color: black;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+textarea{
+    margin-top: 20px;
+    color: black;
+    border: none;
+    background-color:#ffffff00;
+border-bottom: 2px solid black;
+}
+select{
+    width: 13rem;
+    margin-top: 20px;
+    padding: 10px;
+    color:  #4e1e1c;
+    border: none;
+    background-color:#ffffff00;
+    border-bottom: 2px solid black;
+
+}
+button{
+    width: 7rem;
+   height: 3rem;
+   font-family: sans-serif;
+   border:3px solid black;
+   background-color:#ffffff5a;
+   border-radius: 10px;
+   color:black;
+   font-family: sans-serif;
+
+}
+span{
+    color:red;
+}
+.design{
+
+height: 42rem;
+width: 35rem;
+padding: 5rem;
+background-color: #032031;
+border-top-right-radius: 50px;
+border-bottom-right-radius: 50px;
+
+.design1{
+    font-size: 5rem;
+    color:burlywood;
+margin-top: 2rem;
+
+ }
+ .design2{
+    font-size: 5rem;
+    color:burlywood;
+   
+ }
+ p{
+    font-family:sans-serif;
+    font-size:1rem;
+ }
+}
+@media(0px <= width <= 576px){
+    main{
+        height: 200vh;
+    }
+    .main{
+       
+        width: 18rem;
+        height: 75rem;
+        top:2rem;
+        gap:0px;
+
+    }
+    .design{
+        height: 75rem;
+        width: 8rem;
+        padding: 1rem;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+    
+        
+        .design1{
+            font-size: 1.5rem;
+        margin-top: 2rem;
+        
+         }
+         .design2{
+            font-size: 1.5rem;
+           
+         }
+         p{
+            font-size:0.4rem;
+         }
+        }
+        form{
+            width: 10rem;
+        }
+        input{
+             width:6rem;
+             font-size: 12px;
+                padding:5px;
+                margin-top: 10px;
+            }
+            label{
+                font-size: 12px;
+            }
+            textarea{
+                margin-top: 20px;
+                width:6rem;
+            }
+            .text-danger{
+                font-size: 10px;
+
+            }
+            select{
+                width:6rem;
+                margin-top: 20px;
+                padding: 10px;
+                color:  #4e1e1c;
+                border: none;
+                background-color:#ffffff00;
+                border-bottom: 2px solid black;
+            
+            }
+}
+@media(577px<= width <= 768px){
+    main{
+        height: 180vh;
+    }
+    .main{
+       
+        width: 40rem;
+        height: 65rem;
+        top:4rem;
+
+        gap:20px;
+
+    }
+    .design{
+        height: 65rem;
+        width: 18rem;
+        padding: 2rem;
+        background-color: #032031;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        
+        .design1{
+            font-size: 3.5rem;
+            color:burlywood;
+        margin-top: 2rem;
+        
+         }
+         .design2{
+            font-size: 3.5rem;
+            color:burlywood;
+           
+         }
+         p{
+            font-family:sans-serif;
+            font-size:0.7rem;
+         }
+        }
+}
+@media(769px<= width <= 1500px){
+    main{
+        height: 120vh;
+    }
+    .main{
+       
+        width: 60rem;
+        height: 42rem;
+        top:3rem;
+
+        gap:10px;
+
+    }
+    .design{
+        width: 25rem;
+        padding: 3rem;
+    }
+    }
+@media(width >= 2000px){
+    .main{
+       
+        width: 70rem;
+        height: 42rem;
+        top:10rem;
+        gap:30px;
+
+    }
+}

@@ -1,0 +1,58 @@
+<nav class="navbar sticky-top navbar-expand-lg justify-content-center" >
+    <div class="container">
+    <a href="#"class="navbar-brand justify-content-end ">
+       <img src="images\logo.png" alt="logo" >
+       </a>
+        <button class="navbar-toggler justify-content-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" id="offcanvasRight">
+            <div class="offcanvas-header">
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+            <ul class="navbar-nav justify-content-center">
+                <li class="nav-item">
+                    <a routerLink="/homepage" routerLinkActive="active" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/aboutus" routerLinkActive="active">About Us</a>
+                </li>
+                <li class="nav-item dropdown ">
+                <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
+                    <ul class="dropdown-menu">
+                        <li><a [routerLink]="['/services/ApplicationDevelopment&Maintenance']" routerLinkActive="active" class="dropdown-item">Application Development & Maintenance</a></li>
+                        <li><a [routerLink]="['/services/ArtificialIntelligence']" routerLinkActive="active" class="dropdown-item">Artificial Intelligence </a></li>
+                        <li><a [routerLink]="['/services/CloudSolutions']" routerLinkActive="active" class="dropdown-item">CloudSolutions </a></li>
+                        <li><a [routerLink]="['/services/Cybersecurity']" routerLinkActive="active" class="dropdown-item">Cybersecurity</a></li>
+                        <li><a [routerLink]="['/services/DataEngineering']" routerLinkActive="active" class="dropdown-item">DataEngineering</a></li>
+                        <li><a [routerLink]="['/services/EnterpriseApplicationsandIntegrations']" routerLinkActive="active" class="dropdown-item">Enterprise Applications and Integrations</a></li>
+                        <li><a [routerLink]="['/services/QualityAssuranceandEngineering']" routerLinkActive="active" class="dropdown-item">Quality Assurance and Engineering</a></li>
+                        <li><a [routerLink]="['/services/SoftwareProductEngineering']" routerLinkActive="active" class="dropdown-item">Software Product Engineering</a></li>
+                        <li><a [routerLink]="['/services/EnterpriseTurnkeySolutions']" routerLinkActive="active" class="dropdown-item">Enterprise Turnkey Solutions</a></li>
+                    </ul>
+        
+                <li class="nav-item dropdown">
+                    <a href="" class="nav-link dropdown-toggle"  data-bs-toggle="dropdown">Industries</a>
+                    <ul class="dropdown-menu">
+                        <li><a routerLink="/industries/Education" routerLinkActive="active" class="dropdown-item">Education</a></li>
+                        <li><a routerLink="/industries/FinancialServices" routerLinkActive="active" class="dropdown-item">Financial Services</a></li>
+                        <li><a routerLink="/industries/Healthcare" routerLinkActive="active" class="dropdown-item">Healthcare</a></li>
+                        <li><a routerLink="/industries/Manufacturing" routerLinkActive="active" class="dropdown-item">Manufacturing</a></li>
+                        <li><a routerLink="/industries/Retail" routerLinkActive="active" class="dropdown-item">Retail</a></li>
+                        <li><a routerLink="/industries/TransportationAndLogistics" routerLinkActive="active" class="dropdown-item">Transportation & Logistics</a></li>
+                        <li><a routerLink="/industries/RealEstate" routerLinkActive="active" class="dropdown-item">RealEstate</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a routerLink="/partner" routerLinkActive="active"  class="nav-link">Partners</a>
+                </li>
+                <li class="nav-item">
+                    <a routerLink="/careers" routerLinkActive="active" class="nav-link">Careers</a>
+                </li>
+                <li class="nav-item">
+                    <a routerLink="/contact" routerLinkActive="active" class="nav-link">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

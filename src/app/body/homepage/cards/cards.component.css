@@ -1,0 +1,184 @@
+main{
+   margin-top: 15rem;
+  }
+  .card{
+    width: 21rem;
+    height: 12rem;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    background-color:rgba(2, 2, 46, 0.614);
+    overflow: hidden;
+    animation-name: card;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+
+    h3{
+      margin: 10px;
+      padding: 30px;
+      font-family:sans-serif;
+      font-weight: bold;
+      color:#fff;
+      animation-name: head;
+      animation-duration: 1s;
+      animation-timing-function: linear;
+      position: relative;
+    }
+    img{
+       
+        width: 23rem;
+        height: 13rem;
+        position: absolute;
+        z-index: -1;
+    }
+  }
+  .overlay{
+    opacity: 0;
+    position: absolute;
+    height: 12rem;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    padding:50px;
+    width: 23rem;
+    overflow: hidden;
+    background-color:rgb(2, 2, 46);
+    font-family:sans-serif;
+  }
+  .h1{
+    font-family:sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    margin: 3rem;
+    color:black;
+  }
+  .card:hover h1{
+   opacity: 0; 
+  }
+  .card:hover .overlay{
+         opacity: 1;
+         transition: 0.5s linear;
+         color:white;
+
+         
+  }
+  @keyframes card{
+    from{opacity:0.6}
+    to{opacity:1}
+  }
+  @keyframes head{
+    from{left:-10px}
+    to{left:0}
+  }
+  @media(0px <= width <= 576px){
+    main{
+      margin-top: 7rem;
+      padding: 20px;
+     }
+     .card{
+       width: 15rem;
+       height: 10rem;
+       margin-left:10px;
+       h3{
+         font-size:1rem;
+         margin: 20px;
+       }
+     }
+     .overlay{
+       padding:30px;
+       width: 15rem;
+     }
+     .text{
+      font-size: 13px;
+     }
+     .h1{
+       margin: 1rem;
+       font-size: 1.2rem;
+       margin-bottom: 30px;
+    
+     }
+  }
+  @media(577px<= width <= 768px){
+    main{
+      margin-top:7rem;
+      padding: 20px;
+     }
+     .card{
+       width: 14rem;
+       height: 10rem;
+       margin-left:0px;
+       h3{
+         font-size:1.2rem;
+         margin: 10px;
+       }
+     }
+     .overlay{
+       padding:20px;
+       width: 14rem;
+     }
+     .text{
+      font-size: 13px;
+     }
+     .h1{
+       margin: 1rem;
+       font-size: 1.5rem;
+       margin-bottom: 30px;
+
+     }
+  }
+  @media(769px<= width <= 992px){
+    main{
+      margin-top:7rem;
+      padding: 20px;
+     }
+     .card{
+       width: 14rem;
+       height: 10rem;
+       margin-left:0px;
+       h3{
+         font-size:1.2rem;
+         margin: 10px;
+       }
+     }
+     .overlay{
+       padding:20px;
+       width: 14rem;
+     }
+     .text{
+      font-size: 13px;
+     }
+     .h1{
+       margin: 1rem;
+       font-size: 1.5rem;
+       margin-bottom: 30px;
+       text-align: center;
+     }
+  }
+  @media(993px <= width <=1200px){
+    main{
+      margin-top:7rem;
+      padding: 20px;
+     }
+     .card{
+       width: 16rem;
+       height: 10rem;
+       margin-left:15px;
+       h3{
+         font-size:1.2rem;
+         margin: 10px;
+       }
+     }
+     .overlay{
+       padding:20px;
+       width: 16rem;
+     }
+     .text{
+      font-size: 13px;
+     }
+     .h1{
+       margin: 1rem;
+       font-size: 2rem;
+       margin-bottom: 30px;
+       text-align: center;
+     }
+  }
